@@ -1,1 +1,7 @@
-
+select p.id,
+       p.firstname,
+       p.secondname,
+       i1.name||i2.name as pair_name
+from pairs as p
+  join items as i1 on p.Firstname = i1.id
+  join items as i2 on p.Secondname = i2.id;
