@@ -7,3 +7,4 @@ COLUMN5
 listagg( Column2, ',' ) WITHIN GROUP( order by Column2 ) as Column2
 FROM OLD_TABLE
 GROUP BY COLUMN1,COLUMN2,COLUMN3,COLUMN4,COLUMN5;
+order by DESC
