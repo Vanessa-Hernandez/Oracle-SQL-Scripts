@@ -1,0 +1,4 @@
+SELECT cell_value
+FROM TABLE
+WHERE timestamp = (SELECT MAX(timestamp) FROM TABLE WHERE Column1 = :Item1)
+ORDER BY cell_value, timestamp;  
